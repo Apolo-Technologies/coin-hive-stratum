@@ -26,13 +26,13 @@ And then just point your CoinHive miner to the proxy:
   CoinHive.CONFIG.WEBSOCKET_SHARDS = [["ws://localhost:8892"]];
 
   // Start miner
-  var miner = CoinHive.Anonymous('your-monero-address');
+  var miner = CoinHive.Anonymous('your-zerium-address');
   miner.start();
 
 </script>
 ```
 
-Now your CoinHive miner would be mining on `supportXMR.com` pool, using your monero address. This will work for any pool based on the [Stratum Mining Protocol](https://en.bitcoin.it/wiki/Stratum_mining_protocol). You can even set up [your own](https://github.com/zone117x/node-stratum-pool).
+Now your CoinHive miner would be mining on `supportXMR.com` pool, using your zerium address. This will work for any pool based on the [Stratum Mining Protocol](https://en.bitcoin.it/wiki/Stratum_mining_protocol). You can even set up [your own](https://github.com/zone117x/node-stratum-pool).
 
 
 ## CLI
@@ -112,11 +112,11 @@ Yes, just create a `CoinHive.User` and the username will be used as the stratum 
   CoinHive.CONFIG.WEBSOCKET_SHARDS = [["ws://localhost:8892"]];
 
   // Start miner
-  var miner = CoinHive.User('your-monero-address', 'my-worker');
+  var miner = CoinHive.User('your-zerium-address', 'my-worker');
   miner.start();
 
 </script>
-```
+``zerium
 
 #### Can I run this on Docker?
 
